@@ -108,7 +108,7 @@ public class UserController {
             try {
                 for (int i = 0; true; i++) {
                     sseEmitter.send(SseEmitter.event().name("message").data("Message" + i));
-                    Thread.sleep(1000);
+                    Thread.sleep(1200);
 
                 }
             } catch (IOException | InterruptedException e) {
